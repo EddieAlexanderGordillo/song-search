@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/style.css/style.css" />
+  </head>
+  <body>
+    <main id="contenido" class="contenido">
+      <h1>Letras de Canciones</h1>
+      <div class="contenedor">
+        <div id="buscar" class="buscar">
+          <h2>Búsqueda</h2>
+          <p>Busca por artista y nombre:</p>
+          <p><span> * </span>Obligatorio</p>
+          <form action="#" id="formulario-buscar">
+            <div class="input">
+              <label for="artista">Artista: <span>*</span></label>
+              <input type="text" id="artista" placeholder="Artista" />
+            </div>
+            <div class="input">
+              <label for="cancion">Canción: <span>*</span></label>
+              <input type="text" id="cancion" placeholder="Nombre Canción" />
+            </div>
+            <div class="input btnBuscar">
+              <input type="submit" value="Buscar" />
+            </div>
+          </form>
+        </div>
+        <div class="letra-resultado">
+          <h2></h2>
+          <div id="resultado"></div>
+        </div>
+        <div id="mensajes"></div>
+      </div>
+    </main>
+    <script src="../src/index.js" type="module"></script>
+  </body>
+</html>
